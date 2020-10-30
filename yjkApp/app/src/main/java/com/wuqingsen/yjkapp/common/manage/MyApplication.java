@@ -18,6 +18,8 @@ import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.wuqingsen.yjkapp.R;
 
+import cn.bmob.v3.Bmob;
+
 /**
  * Name: 吴庆森
  * Date: 2019/8/29
@@ -58,6 +60,13 @@ public class MyApplication extends Application {
         instances = this;
         // 初始化MultiDex
         MultiDex.install(this);
+        //初始化SDK
+        initSdk();
+    }
+
+    private void initSdk() {
+        //bmob
+        Bmob.initialize(this, "51929439b71935f1fa0fb8825b8c7a8c");
     }
 
     public static MyApplication getInstances() {
