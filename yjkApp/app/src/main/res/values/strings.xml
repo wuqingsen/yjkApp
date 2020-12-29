@@ -1,3 +1,68 @@
 <resources>
     <string name="app_name">yjkApp</string>
+
+
+    <string name="goBack">goBack</string>
+    <string name="history">History</string>
+    <string name="search">search</string>
+    <string name="delete">delete</string>
+    <string name="leftDelete">Prompt：Swipe left to delete</string>
+    <string name="AddSuccess">Added to playlist successfully</string>
+    <string name="deleteSuccess">successfully delete</string>
+    <string name="qq_music_data">Music：</string>
+    <string name="no_data">No Data</string>
+    <string name="playlist">The current playlist</string>
+    <!-- 首页 -->
+    <string name="homePage">首页</string>
+    <string name="homePageIcon">&#xf015;</string>
+    <string name="homeMenu">菜单</string>
+    <string name="homePageMenu">&#xf0c9;</string>
+    <string name="homeMusic">音乐</string>
+    <string name="homeMusicIcon">&#xf001;</string>
+    <string name="homeMap">地图定位</string>
+    <string name="homeMapIcon">&#xf041;</string>
+    <string name="homeLanguage">多语言选择</string>
+    <string name="homeLanguageIcon">&#xf1ab;</string>
+    <string name="homeAsFor">关于我们</string>
+    <string name="homeHelp">帮助中心</string>
+    <string name="homeHelpIcon">&#xf256;</string>
+    <string name="searchIcon">&#xf002;</string>
+    <string name="addIcon">&#xf118;</string>
+    <string name="openPermission">请开启应用定位权限</string>
+    <string name="searchMusic">搜索音乐</string>
+    <string name="searchError">搜索异常</string>
+    <string name="addPlay">已加入播放歌单</string>
+
+    <!-- 发现 -->
+    <string name="findPage">发现</string>
+    <string name="findPageIcon">&#xf228;</string>
+
+    <!-- 消息 -->
+    <string name="messagePage">消息</string>
+    <string name="message_newchat">New chat</string>
+    <string name="message_add">To:</string>
+    <string name="message_start">Start chat</string>
+    <string name="message_remarks">Please enter remarks</string>
+    <string name="message_successful">Send successful</string>
+    <string name="message_error">Send error</string>
+    <string name="messagePageIcon">&#xf27a;</string>
+    <string name="Agreed">Agreed</string>
+
+    <!-- 我的 -->
+    <string name="minePage">我的</string>
+    <string name="minePageIcon">&#xf1a9;</string>
+    <string name="mineName">name</string>
+    <string name="mineId">id</string>
+
+    <!-- 登录 -->
+    <string name="login_name">account</string>
+    <string name="login_password">password</string>
+    <string name="login_registered">registered</string>
+    <string name="login_login">login</string>
+    <string name="login_nameNull">Account is empty</string>
+    <string name="login_passwordNull">Password is empty</string>
+    <string name="login_error">Login error</string>
+    <string name="registered_error">Registered error</string>
+    <string name="registered_success">Registered success, please log in</string>
+    <string name="login_exit">Exit</string>
 </resources>

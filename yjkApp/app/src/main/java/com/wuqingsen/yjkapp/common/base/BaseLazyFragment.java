@@ -30,7 +30,6 @@ public abstract class BaseLazyFragment extends Fragment {
     protected Context mContext;
     public MyApplication application;
     private View view;
-    public Typeface font;
 
     //是否可见
     public boolean isVisible = false;
@@ -79,7 +78,6 @@ public abstract class BaseLazyFragment extends Fragment {
     private void setParam() {
         if (isInit && !isLoadOver && isVisible) {
             isLoadOver = true;
-            font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/fontawesome-webfont.ttf");
             setData();
         }
     }

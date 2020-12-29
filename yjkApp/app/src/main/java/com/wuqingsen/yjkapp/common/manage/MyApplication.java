@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import androidx.multidex.MultiDex;
 
 import com.bumptech.glide.Glide;
+import com.hjq.toast.ToastUtils;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.DefaultRefreshFooterCreator;
 import com.scwang.smartrefresh.layout.api.DefaultRefreshHeaderCreator;
@@ -67,6 +68,8 @@ public class MyApplication extends Application {
     private void initSdk() {
         //bmob
         Bmob.initialize(this, "51929439b71935f1fa0fb8825b8c7a8c");
+        //toast初始化
+        ToastUtils.init(this);
     }
 
     public static MyApplication getInstances() {

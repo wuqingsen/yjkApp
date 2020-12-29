@@ -32,8 +32,6 @@ import butterknife.ButterKnife;
 public abstract class BaseFragment extends Fragment {
     protected Context mContext;
     public MyApplication application;
-    public Typeface font;
-    public HashMap hashMapHttp;
 
     @Override
 
@@ -58,8 +56,6 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/fontawesome-webfont.ttf");
-        hashMapHttp = new HashMap();
         setData();
     }
 

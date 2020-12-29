@@ -23,7 +23,7 @@ import java.lang.reflect.Method;
 
 public class Eyes {
 
-
+    //更改状态栏背景色
     public static void setStatusBarColor(Activity activity, int statusColor) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             EyesLollipop.setStatusBarColor(activity, statusColor);
@@ -53,6 +53,7 @@ public class Eyes {
         }
     }
 
+    //更改状态栏背景色
     public static void setStatusBarLightMode(Activity activity, int color) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             //判断是否为小米或魅族手机，如果是则将状态栏文字改为黑色

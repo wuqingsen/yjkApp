@@ -8,6 +8,7 @@ import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
@@ -56,6 +57,8 @@ public abstract class BaseActivity extends SwipeBackActivity {
         // 添加Activity到堆栈
         AppManager.getAppManager().addActivity(this);
         setActivityAnimation();
+        //去掉顶部标题
+        getSupportActionBar().hide();
         //设置布局
         if (setLayout() != 0) setContentView(setLayout());
         //设置状态栏
@@ -75,8 +78,7 @@ public abstract class BaseActivity extends SwipeBackActivity {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void setInit() {
         //设置标题栏
-        Eyes.setStatusBarColor(this, ContextCompat.getColor(this, R.color.blue_e2));
-
+        Eyes.setStatusBarLightMode(this,ContextCompat.getColor(this, R.color.white));
         // 可以调用该方法，设置是否允许滑动退出
         setSwipeBackEnable(true);
 
